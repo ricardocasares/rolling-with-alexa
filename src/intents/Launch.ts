@@ -1,16 +1,14 @@
 import { Response } from "ask-sdk-model";
 import { HandlerInput, RequestHandler } from "ask-sdk-core";
 
-export const TopSpeakers: RequestHandler = {
+export const Launch: RequestHandler = {
   handle(input: HandlerInput): Response {
     return input.responseBuilder
-      .speak("Top speakers intent handler")
+      .speak("Welcome, you can ask me about upcoming events, or top speakers.")
       .getResponse();
   },
 
   canHandle(input: HandlerInput): boolean {
-    if (input.requestEnvelope.request.type !== "IntentRequest") return false;
-
-    return input.requestEnvelope.request.intent.name === "TopSpeakers";
+    return input.requestEnvelope.request.type === "LaunchRequest";
   }
 };
