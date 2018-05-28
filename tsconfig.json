@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "lib": ["es2017"],
+    "outDir": ".build",
+    "allowSyntheticDefaultImports": false,
+    "importHelpers": true,
+    "sourceMap": true
+  }
+}
