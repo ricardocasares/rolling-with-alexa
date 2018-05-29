@@ -307,6 +307,13 @@ core-util-is@~1.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/core-util-is/-/core-util-is-1.0.2.tgz#b5fd54220aa2bc5ab57aab7140c940754503c1a7"
 
+cross-fetch@2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/cross-fetch/-/cross-fetch-2.0.0.tgz#a17475449561e0f325146cea636a8619efb9b382"
+  dependencies:
+    node-fetch "2.0.0"
+    whatwg-fetch "2.0.3"
+
 cross-spawn@^5.0.1:
   version "5.1.0"
   resolved "https://registry.yarnpkg.com/cross-spawn/-/cross-spawn-5.1.0.tgz#e8bd0efee58fcff6f8f94510a0a554bbfa235449"
@@ -656,6 +663,12 @@ glob@^7.0.5:
 graceful-fs@^4.1.2:
   version "4.1.11"
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.1.11.tgz#0e8bdfe4d1ddb8854d64e04ea7c00e2a026e5658"
+
+graphql-request@^1.6.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/graphql-request/-/graphql-request-1.6.0.tgz#afe87cf2a336acabb0cc2a875900202eda89f412"
+  dependencies:
+    cross-fetch "2.0.0"
 
 has-flag@^3.0.0:
   version "3.0.0"
@@ -1148,6 +1161,10 @@ needle@^2.2.0:
 nice-try@^1.0.4:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/nice-try/-/nice-try-1.0.4.tgz#d93962f6c52f2c1558c0fbda6d512819f1efe1c4"
+
+node-fetch@2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.0.0.tgz#982bba43ecd4f2922a29cc186a6bbb0bb73fcba6"
 
 node-pre-gyp@^0.10.0:
   version "0.10.0"
@@ -1839,6 +1856,10 @@ validate-npm-package-license@^3.0.1:
   dependencies:
     spdx-correct "^3.0.0"
     spdx-expression-parse "^3.0.0"
+
+whatwg-fetch@2.0.3:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/whatwg-fetch/-/whatwg-fetch-2.0.3.tgz#9c84ec2dcf68187ff00bc64e1274b442176e1c84"
 
 which-module@^2.0.0:
   version "2.0.0"
