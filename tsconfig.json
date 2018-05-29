@@ -3,7 +3,7 @@
     "lib": ["es2017"],
     "outDir": ".build",
     "skipLibCheck": true,
-    "allowSyntheticDefaultImports": false,
+    "allowSyntheticDefaultImports": true,
     "importHelpers": true,
     "sourceMap": true
   }
