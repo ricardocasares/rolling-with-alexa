@@ -11,7 +11,7 @@ Checkout [the slides](https://slides.com/ricardocasares/voice-user-interfaces-wi
 ```sh
 > git clone https://github.com/ricardocasares/rolling-with-alexa.git
 > cd rolling-with-alexa
-> npm install # or npm install
+> npm install # or yarn
 ```
 
 ### Alexa console
@@ -20,12 +20,15 @@ Checkout [the slides](https://slides.com/ricardocasares/voice-user-interfaces-wi
 2.  Go to the [Alexa Console](https://developer.amazon.com/alexa/console/ask) and create a new Skill
 3.  Choose the skill Name, and select Custom Skill
 4.  Under the `Interaction Model` sidebar menu, click on `JSON Editor` and copy/paste the JSON under `/model/en-US.json`
+5.  Save & build your skill.
 
 ### Local server tunneling
 
 In order to develop locally and see your changes reflected instantly, you will need to create an SSH tunnel or expose somehow your local development server. There are several services that allow you to do this, for example `ngrok.io` or `serveo.net`.
 
-### Using serveo.net
+#### Using serveo.net
+
+This is the easiest to setup
 
 1.  You need to have an SSH client installed, then simply run
 
@@ -40,3 +43,13 @@ Press g to start a GUI session and ctrl-c to quit.
 4.  Under `Default Region` paste the previous URL you copied.
 5.  On the select box choose: `My development endpoint is a sub-domain of a domain that has a wildcard certificate from a certificate authority`.
 6.  You are done! Just run `npm run dev` or `yarn dev` to start the local server and begin testing the skill.
+
+#### Using ngrok.io
+
+1.  Run `npm install ngrok`
+2.  Run `ngrok http 3000`
+3.  Copy the URL and follow the same steps above from 3 to 6.
+
+## Contributing
+
+Feel free to submit a pull request or create a new issue.
