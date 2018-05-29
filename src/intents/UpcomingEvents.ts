@@ -1,10 +1,17 @@
 import { Response } from "ask-sdk-model";
 import { HandlerInput, RequestHandler } from "ask-sdk-core";
+import { randomEvents, HELP } from "../lib/phrases";
+import { eventsReducer } from "../lib/helpers";
+import Api from "../api";
 
 export const UpcomingEvents: RequestHandler = {
-  handle(input: HandlerInput): Response {
+  async handle(input: HandlerInput): Promise<Response> {
+    const events = await Api.UpcomingEvents();
+    const speech = [randomEvents(), eventsReducer(events)].join(" ");
+
     return input.responseBuilder
-      .speak("Upcoming events intent handler.")
+      .speak(speech)
+      .reprompt(HELP)
       .getResponse();
   },
 

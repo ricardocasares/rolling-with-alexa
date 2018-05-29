@@ -1,11 +1,10 @@
 import { Response } from "ask-sdk-model";
 import { HandlerInput, ErrorHandler } from "ask-sdk-core";
+import { randomRollingError } from "../lib/phrases";
 
 export const Rolling: ErrorHandler = {
   handle(input: HandlerInput, error: Error): Response {
-    return input.responseBuilder
-      .speak("Oh no! There was a rolling error, please try again!")
-      .getResponse();
+    return input.responseBuilder.speak(randomRollingError()).getResponse();
   },
 
   canHandle(input: HandlerInput, error: Error): boolean {
