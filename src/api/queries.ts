@@ -12,7 +12,7 @@ export const topSpeakers = `{
 export const upcomingEvents = `{
   page(url:"https://rollingscopes.com/") {
     query(selector:"ul.event-list li") {
-      name: text(selector:"h2:not(.date) a"),
+      name: text(selector:"h2:not(.date)"),
       day: text(selector:"h2.date"),
       month: text(selector:"p.mounth")
     }
