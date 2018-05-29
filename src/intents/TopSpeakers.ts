@@ -1,22 +1,21 @@
-import { Response } from "ask-sdk-model";
+import { Response, IntentRequest } from "ask-sdk-model";
 import { HandlerInput, RequestHandler } from "ask-sdk-core";
 import Api from "../api";
-import { TOP } from "../lib/constants";
-import { randomSpeakers, HELP } from "../lib/phrases";
-import { speakersReducer, extractSlots } from "../lib/helpers";
+import { speakersReducer } from "../lib/helpers";
 
 export const TopSpeakers: RequestHandler = {
   async handle(input: HandlerInput): Promise<Response> {
-    const { top } = extractSlots(input);
-    const n = parseInt(top.value, 10);
-    const topN = isNaN(n) ? TOP : n;
-    const speakers = await Api.TopSpeakers(topN);
-    const phrases = [randomSpeakers()(topN), speakersReducer(speakers)];
-    const speech = phrases.join(" ");
+    const slots = (input.requestEnvelope.request as IntentRequest).intent.slots;
+
+    let number = parseInt(slots.top.value, 10);
+    number = isNaN(number) ? 3 : number;
+
+    const speakers = await Api.TopSpeakers(number);
+    const speech = speakersReducer(speakers);
 
     return input.responseBuilder
       .speak(speech)
-      .reprompt(HELP)
+      .reprompt("You can ask me about upcoming events or top speakers.")
       .getResponse();
   },
 

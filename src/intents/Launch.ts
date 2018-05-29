@@ -1,14 +1,11 @@
 import { Response } from "ask-sdk-model";
 import { HandlerInput, RequestHandler } from "ask-sdk-core";
-import { randomWelcome, HELP } from "../lib/phrases";
 
 export const Launch: RequestHandler = {
   handle(input: HandlerInput): Response {
-    const speech = [randomWelcome(), HELP].join(" ");
-
     return input.responseBuilder
-      .speak(speech)
-      .reprompt(HELP)
+      .speak("Welcome to the Rolling Scopes!")
+      .reprompt("You can ask me about upcoming events or top speakers.")
       .getResponse();
   },
 

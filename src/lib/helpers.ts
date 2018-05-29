@@ -1,6 +1,5 @@
 import { HandlerInput } from "ask-sdk-core";
 import { Slot } from "ask-sdk-model";
-import { randomCongrats } from "./phrases";
 
 export enum ErrorTypes {
   Rolling = "RollingError",
@@ -29,7 +28,7 @@ export function speakersReducer(speakers) {
       (speech, { name, talks }, idx) =>
         speech
           .concat(`Number ${speakers.length - idx}: `)
-          .concat(`${name} with ${talks} talks. ${randomCongrats()}. `),
+          .concat(`${name} with ${talks} talks. `),
       ""
     );
 }
