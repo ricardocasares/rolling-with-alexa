@@ -1,20 +1,28 @@
 import GQL from "./queries";
 import { compose } from "../helpers";
+import { date } from "../fx";
 import { API, TOP, MONTHS } from "../constants";
 import { GraphQLClient } from "graphql-request";
+import * as translit from "translitit-cyrillic-russian-to-latin";
 
 const client = new GraphQLClient(API);
 
-export async function TopSpeakers(n: number = TOP) {
+export async function TopSpeakers(n: number) {
+  if (isNaN(n)) {
+    n = TOP;
+  }
+
   return client.request(GQL.topSpeakers).then(top(n));
 }
 
 export async function UpcomingEvents() {
-  return client.request(GQL.upcomingEvents).then(compose(format, extract));
+  return client
+    .request(GQL.upcomingEvents)
+    .then(compose(latin, format, extract));
 }
 
 function top(n: number) {
-  return compose(limit(n), sort, filter, map, extract);
+  return compose(limit(n), sort, latin, filter, map, extract);
 }
 
 function extract(data) {
@@ -43,6 +51,15 @@ function limit(n: number) {
 function format(data) {
   return data.map(({ name, day, month }) => ({
     name,
-    date: `${day} of ${MONTHS[month]}`
+    date: date(day, month)
   }));
 }
+
+function latin(data) {
+  return data.map(({ name, ...rest }) => ({
+    ...rest,
+    name: translit(name.replace("&", "and"))
+  }));
+}
+
+export default { TopSpeakers, UpcomingEvents };

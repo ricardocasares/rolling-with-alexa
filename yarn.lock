@@ -1796,6 +1796,16 @@ to-regex@^3.0.1, to-regex@^3.0.2:
     regex-not "^1.0.2"
     safe-regex "^1.1.0"
 
+translitit-cyrillic-russian-to-latin@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/translitit-cyrillic-russian-to-latin/-/translitit-cyrillic-russian-to-latin-0.1.1.tgz#cc541a6b4a12bc013d5d9482c84da3415a7d98a1"
+  dependencies:
+    translitit-engine "0.1.1"
+
+translitit-engine@0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/translitit-engine/-/translitit-engine-0.1.1.tgz#8fbfbf21d85ac08312b63825e720766d9add3bf8"
+
 tslib@^1.9.1:
   version "1.9.1"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.9.1.tgz#a5d1f0532a49221c87755cfcc89ca37197242ba7"
@@ -1812,6 +1822,16 @@ union-value@^1.0.0:
     get-value "^2.0.6"
     is-extendable "^0.1.1"
     set-value "^0.4.3"
+
+unique-random-array@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/unique-random-array/-/unique-random-array-1.0.1.tgz#f29bda2a62be8860a703c4739c8f4fdb4d722cc7"
+  dependencies:
+    unique-random "^1.0.0"
+
+unique-random@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/unique-random/-/unique-random-1.0.0.tgz#ce3e224c8242cd33a0e77b0d7180d77e6b62d0c4"
 
 unpipe@1.0.0:
   version "1.0.0"

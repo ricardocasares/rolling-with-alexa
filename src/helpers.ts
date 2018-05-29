@@ -1,6 +1,11 @@
+import { HandlerInput } from "ask-sdk-core";
+import { Slot } from "ask-sdk-model";
+import { randomCongrats } from "./phrases";
+
 export enum ErrorTypes {
   Rolling = "RollingError",
-  Unknown = "UnknownError"
+  Unknown = "UnknownError",
+  WrongRequestType = "WrongRequestType"
 }
 
 export function compose(...fns) {
@@ -15,4 +20,34 @@ export function createError(
   error.name = type;
 
   return error;
+}
+
+export function speakersReducer(speakers) {
+  return speakers
+    .reverse()
+    .reduce(
+      (speech, { name, talks }, idx) =>
+        speech
+          .concat(`Number ${speakers.length - idx}: `)
+          .concat(`${name} with ${talks} talks. ${randomCongrats()}. `),
+      ""
+    );
+}
+
+export function eventsReducer(events) {
+  return events.reduce(
+    (speech, { name, date }, idx) => speech.concat(`${date}: ${name}. `),
+    ""
+  );
+}
+
+export function extractSlots(input: HandlerInput): Record<string, Slot> {
+  if (input.requestEnvelope.request.type !== "IntentRequest") {
+    throw createError(
+      "Request is not IntentRequest",
+      ErrorTypes.WrongRequestType
+    );
+  }
+
+  return input.requestEnvelope.request.intent.slots;
 }

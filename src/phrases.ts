@@ -1,0 +1,56 @@
+import * as random from "unique-random-array";
+import { audio, interject, DRUMS, CRICKETS } from "./fx";
+
+export const WELCOME = [
+  "Welcome to the Rolling Scopes!",
+  `${interject("bonjour")}, nice to see you again!`,
+  `${interject("ta da")}, welcome to the Rolling Scopes!`,
+  `${interject("dun dun dun")}, welcome to the Rolling Scopes!`,
+  `${interject("bada bing bada boom")}, welcome to the Rolling Scopes!`
+];
+
+export const EVENTS = [
+  `${interject("gotcha")}, next events are:`,
+  `${interject("all righty")}, upcoming events on Rolling Scopes:`,
+  `${interject("mamma mia")}, the next Rolling Scopes events:`,
+  `${interject("okey dokey")}, coming next on the Rolling Scopes:`
+];
+
+export const SPEAKERS = [
+  n =>
+    `${interject("dun dun dun")}, and the top ${n} speakers are: ${audio(
+      DRUMS
+    )}`,
+  n => `${interject("all righty")}, the best ${n} speakers are:`,
+  n => `Sure, here are the top ${n} speakers:`
+];
+
+export const CONGRATS = [
+  interject("wow"),
+  interject("bravo"),
+  interject("oh my"),
+  interject("hurray"),
+  interject("oh la la"),
+  interject("well done")
+];
+
+export const GOODBYE = [
+  `${interject("au revoir")}, see you at the next conference!`,
+  `${interject("arrivederci")}, see you at the next conference!`,
+  `See you at the next conference, ${interject("bon voyage")}!`
+];
+
+export const ERRORS = [
+  `${interject("uh oh")}, something broke, please try again!`,
+  `${interject("shucks")}, something weird just happened, please try again!`,
+  `${interject("good grief")}, something weird just happened, please try again!`
+];
+
+export const HELP = "You can ask me about upcoming events or top speakers.";
+
+export const randomError = random(ERRORS);
+export const randomEvents = random(EVENTS);
+export const randomWelcome = random(WELCOME);
+export const randomGoodbye = random(GOODBYE);
+export const randomSpeakers = random(SPEAKERS);
+export const randomCongrats = random(CONGRATS);
