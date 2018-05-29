@@ -1,5 +1,4 @@
 import * as Alexa from "ask-sdk-core";
-import * as Errors from "./errors";
 import * as Intents from "./intents";
 
 export const handler = Alexa.SkillBuilders.custom()
@@ -11,5 +10,4 @@ export const handler = Alexa.SkillBuilders.custom()
     Intents.UpcomingEvents,
     Intents.SessionEnded
   )
-  .addErrorHandlers(Errors.Rolling, Errors.Unknown)
   .lambda();

@@ -1,10 +1,9 @@
 import { Response } from "ask-sdk-model";
 import { HandlerInput, RequestHandler } from "ask-sdk-core";
-import { randomGoodbye } from "../lib/phrases";
 
 export const Stop: RequestHandler = {
   handle(input: HandlerInput): Response {
-    return input.responseBuilder.speak(randomGoodbye()).getResponse();
+    return input.responseBuilder.speak("Goodbye!").getResponse();
   },
 
   canHandle(input: HandlerInput): boolean {
