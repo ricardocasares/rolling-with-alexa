@@ -1,7 +1,7 @@
 import GQL from "./queries";
 import { compose } from "../helpers";
 import { API, TOP, MONTHS } from "../constants";
-import { request, GraphQLClient } from "graphql-request";
+import { GraphQLClient } from "graphql-request";
 
 const client = new GraphQLClient(API);
 
