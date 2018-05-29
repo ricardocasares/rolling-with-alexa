@@ -1,10 +1,11 @@
 import { Response } from "ask-sdk-model";
 import { HandlerInput, RequestHandler } from "ask-sdk-core";
-import { HELP } from "../lib/phrases";
 
 export const Help: RequestHandler = {
   handle(input: HandlerInput): Response {
-    return input.responseBuilder.speak(HELP).getResponse();
+    return input.responseBuilder
+      .speak("You can ask me about upcoming events or top speakers.")
+      .getResponse();
   },
 
   canHandle(input: HandlerInput): boolean {
