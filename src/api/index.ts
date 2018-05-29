@@ -1,5 +1,5 @@
 import GQL from "./queries";
-import { compose } from "../lib/helpers";
+import { compose, createError, ErrorTypes } from "../lib/helpers";
 import { date } from "../lib/fx";
 import { API, TOP, MONTHS } from "../lib/constants";
 import { GraphQLClient } from "graphql-request";
@@ -8,13 +8,21 @@ import * as translit from "translitit-cyrillic-russian-to-latin";
 const client = new GraphQLClient(API);
 
 export async function TopSpeakers(n: number) {
-  return client.request(GQL.topSpeakers).then(top(n));
+  return client
+    .request(GQL.topSpeakers)
+    .then(top(n))
+    .catch(err => {
+      throw createError(err.message, ErrorTypes.Rolling);
+    });
 }
 
 export async function UpcomingEvents() {
   return client
     .request(GQL.upcomingEvents)
-    .then(compose(latin, format, extract));
+    .then(compose(latin, format, extract))
+    .catch(err => {
+      throw createError(err.message, ErrorTypes.Rolling);
+    });
 }
 
 function top(n: number) {

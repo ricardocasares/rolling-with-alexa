@@ -4,6 +4,8 @@ import { randomRollingError } from "../lib/phrases";
 
 export const Rolling: ErrorHandler = {
   handle(input: HandlerInput, error: Error): Response {
+    // do your analytics
+    console.log(error.message);
     return input.responseBuilder.speak(randomRollingError()).getResponse();
   },
 

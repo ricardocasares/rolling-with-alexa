@@ -4,6 +4,8 @@ import { randomError } from "../lib/phrases";
 
 export const Unknown: ErrorHandler = {
   handle(input: HandlerInput, error: Error): Response {
+    // do your analytics
+    console.log(error.message);
     return input.responseBuilder.speak(randomError()).getResponse();
   },
 
