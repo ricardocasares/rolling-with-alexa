@@ -16,7 +16,7 @@ export const MONTHS = {
 };
 
 export enum ErrorTypes {
-  Rolling = "RollingError",
   Unknown = "UnknownError",
+  RollingApi = "RollingApiError",
   WrongRequestType = "WrongRequestType"
 }

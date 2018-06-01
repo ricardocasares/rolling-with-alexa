@@ -11,7 +11,7 @@ export async function TopSpeakers(n: number) {
     .request(GQL.topSpeakers)
     .then(top(n))
     .catch(err => {
-      throw createError(err.message, ErrorTypes.Rolling);
+      throw createError(err.message, ErrorTypes.RollingApi);
     });
 }
 
@@ -20,7 +20,7 @@ export async function UpcomingEvents() {
     .request(GQL.upcomingEvents)
     .then(extract)
     .catch(err => {
-      throw createError(err.message, ErrorTypes.Rolling);
+      throw createError(err.message, ErrorTypes.RollingApi);
     });
 }
 

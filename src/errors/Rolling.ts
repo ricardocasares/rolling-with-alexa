@@ -12,6 +12,6 @@ export const Rolling: ErrorHandler = {
   },
 
   canHandle(input: HandlerInput, error: Error): boolean {
-    return error.name === ErrorTypes.Rolling;
+    return error.name === ErrorTypes.RollingApi;
   }
 };
