@@ -1,6 +1,6 @@
 import { MONTHS } from "./constants";
 
-export function audio(src) {
+export function audio(src: string): string {
   return `<audio src="${src}" />`;
 }
 
