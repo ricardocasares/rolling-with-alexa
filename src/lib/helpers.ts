@@ -2,8 +2,8 @@ import { Slot } from "ask-sdk-model";
 import { HandlerInput } from "ask-sdk-core";
 import * as translit from "translitit-cyrillic-russian-to-latin";
 
-import { ErrorTypes } from "./constants";
 import { randomCongrats } from "./phrases";
+import { ErrorTypes, RequestTypes } from "./constants";
 
 export function compose(...fns) {
   return fns.reduce((f, g) => (...args) => f(g(...args)));
@@ -24,9 +24,9 @@ export function createError(
 }
 
 export function getSlots(input: HandlerInput): Record<string, Slot> {
-  if (input.requestEnvelope.request.type !== "IntentRequest") {
+  if (input.requestEnvelope.request.type !== RequestTypes.Intent) {
     throw createError(
-      "Request is not IntentRequest",
+      `Request is not ${RequestTypes.Intent}`,
       ErrorTypes.WrongRequestType
     );
   }

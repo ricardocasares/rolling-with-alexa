@@ -1,6 +1,7 @@
 import { Response } from "ask-sdk-model";
 import { HandlerInput, RequestHandler } from "ask-sdk-core";
 
+import { RequestTypes } from "../lib/constants";
 import { randomWelcome, HELP } from "../lib/phrases";
 
 export const Launch: RequestHandler = {
@@ -14,6 +15,6 @@ export const Launch: RequestHandler = {
   },
 
   canHandle(input: HandlerInput): boolean {
-    return input.requestEnvelope.request.type === "LaunchRequest";
+    return input.requestEnvelope.request.type === RequestTypes.Launch;
   }
 };

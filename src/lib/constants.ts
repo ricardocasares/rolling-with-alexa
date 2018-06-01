@@ -20,3 +20,17 @@ export enum ErrorTypes {
   RollingApi = "RollingApiError",
   WrongRequestType = "WrongRequestType"
 }
+
+export enum RequestTypes {
+  Launch = "LaunchRequest",
+  Intent = "IntentRequest",
+  SessionEnded = "SessionEndedRequest"
+}
+
+export enum IntentTypes {
+  Help = "AMAZON.HelpIntent",
+  Stop = "AMAZON.StopIntent",
+  Cancel = "AMAZON.CancelIntent",
+  TopSpeakers = "TopSpeakers",
+  UpcomingEvents = "UpcomingEvents"
+}

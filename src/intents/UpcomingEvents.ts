@@ -3,6 +3,7 @@ import { HandlerInput, RequestHandler } from "ask-sdk-core";
 
 import Api from "../api";
 import { randomEvents, eventsList, HELP } from "../lib/phrases";
+import { RequestTypes, IntentTypes } from "../lib/constants";
 
 export const UpcomingEvents: RequestHandler = {
   async handle(input: HandlerInput): Promise<Response> {
@@ -16,8 +17,12 @@ export const UpcomingEvents: RequestHandler = {
   },
 
   canHandle(input: HandlerInput): boolean {
-    if (input.requestEnvelope.request.type !== "IntentRequest") return false;
+    if (input.requestEnvelope.request.type !== RequestTypes.Intent) {
+      return false;
+    }
 
-    return input.requestEnvelope.request.intent.name === "UpcomingEvents";
+    return (
+      input.requestEnvelope.request.intent.name === IntentTypes.UpcomingEvents
+    );
   }
 };
