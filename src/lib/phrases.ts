@@ -1,6 +1,7 @@
 import * as random from "unique-random-array";
 
-import { audio, interject, DRUMS } from "./fx";
+import { sanitize } from "./helpers";
+import { audio, date, interject, DRUMS } from "./fx";
 
 export const WELCOME = [
   "Welcome to the Rolling Scopes!",
@@ -66,8 +67,8 @@ export function listSpeakers(speakers) {
   return speakers.reverse().reduce(speakersReducer(speakers), "");
 }
 
-function eventsReducer(speech, { name, date }) {
-  return speech.concat(`${date}: ${name}. `);
+function eventsReducer(speech, { name, day, month }) {
+  return speech.concat(`${date(day, month)}: ${sanitize(name)}. `);
 }
 
 function speakersReducer(speakers) {
@@ -76,7 +77,7 @@ function speakersReducer(speakers) {
   return (speech, { name, talks }, idx) =>
     speech
       .concat(`Number ${n - idx}: `)
-      .concat(`${name} with ${talks} talks. ${randomCongrats()}. `);
+      .concat(`${sanitize(name)} with ${talks} talks. ${randomCongrats()}. `);
 }
 
 export const randomError = random(ERRORS);
