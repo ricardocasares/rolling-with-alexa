@@ -18,7 +18,7 @@ export async function TopSpeakers(n: number) {
 export async function UpcomingEvents() {
   return client
     .request(GQL.upcomingEvents)
-    .then(compose(extract))
+    .then(extract)
     .catch(err => {
       throw createError(err.message, ErrorTypes.Rolling);
     });
