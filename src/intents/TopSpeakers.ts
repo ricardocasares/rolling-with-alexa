@@ -8,11 +8,9 @@ import { randomSpeakers, listSpeakers, HELP } from "../lib/phrases";
 
 export const TopSpeakers: RequestHandler = {
   async handle(input: HandlerInput): Promise<Response> {
-    const { top } = extractSlots(input);
-    const n = parseInt(top.value, 10);
-    const topN = isNaN(n) ? TOP : n;
-    const speakers = await Api.TopSpeakers(topN);
-    const phrases = [randomSpeakers()(topN), speakersReducer(speakers)];
+    const n = getTop(input);
+    const speakers = await Api.TopSpeakers(n);
+    const phrases = [randomSpeakers()(n), listSpeakers(speakers)];
     const speech = phrases.join(" ");
 
     return input.responseBuilder
@@ -27,3 +25,10 @@ export const TopSpeakers: RequestHandler = {
     return input.requestEnvelope.request.intent.name === "TopSpeakers";
   }
 };
+
+function getTop(input): number {
+  const { top } = getSlots(input);
+  const n = parseInt(top.value, 10);
+
+  return isNaN(n) ? TOP : n;
+}
