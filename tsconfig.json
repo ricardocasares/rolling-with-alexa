@@ -5,6 +5,9 @@
     "skipLibCheck": true,
     "allowSyntheticDefaultImports": true,
     "importHelpers": true,
-    "sourceMap": true
+    "sourceMap": true,
+    "noUnusedLocals": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true
   }
 }

@@ -2,7 +2,7 @@ import { GraphQLClient } from "graphql-request";
 
 import GQL from "./queries";
 import { compose, createError } from "../lib/helpers";
-import { API, TOP, MONTHS, ErrorTypes } from "../lib/constants";
+import { API, ErrorTypes } from "../lib/constants";
 
 const client = new GraphQLClient(API);
 

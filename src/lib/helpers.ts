@@ -2,7 +2,6 @@ import { Slot } from "ask-sdk-model";
 import { HandlerInput } from "ask-sdk-core";
 import * as translit from "translitit-cyrillic-russian-to-latin";
 
-import { randomCongrats } from "./phrases";
 import { ErrorTypes, RequestTypes } from "./constants";
 
 export function compose(...fns) {
