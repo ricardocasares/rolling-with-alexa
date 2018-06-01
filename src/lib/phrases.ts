@@ -58,8 +58,16 @@ export const ROLLING_ERRORS = [
 
 export const HELP = "You can ask me about upcoming events or top speakers.";
 
+export function listEvents(events) {
+  return events.reduce(eventsReducer, "");
+}
+
 export function listSpeakers(speakers) {
   return speakers.reverse().reduce(speakersReducer(speakers), "");
+}
+
+function eventsReducer(speech, { name, date }) {
+  return speech.concat(`${date}: ${name}. `);
 }
 
 function speakersReducer(speakers) {
@@ -69,14 +77,6 @@ function speakersReducer(speakers) {
     speech
       .concat(`Number ${n - idx}: `)
       .concat(`${name} with ${talks} talks. ${randomCongrats()}. `);
-}
-
-export function listEvents(events) {
-  return events.reduce(eventsReducer, "");
-}
-
-function eventsReducer(speech, { name, date }) {
-  return speech.concat(`${date}: ${name}. `);
 }
 
 export const randomError = random(ERRORS);
