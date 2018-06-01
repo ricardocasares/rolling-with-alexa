@@ -1,13 +1,13 @@
 import { Response } from "ask-sdk-model";
 import { HandlerInput, RequestHandler } from "ask-sdk-core";
-import { randomEvents, HELP } from "../lib/phrases";
-import { eventsReducer } from "../lib/helpers";
+
 import Api from "../api";
+import { randomEvents, listEvents, HELP } from "../lib/phrases";
 
 export const UpcomingEvents: RequestHandler = {
   async handle(input: HandlerInput): Promise<Response> {
     const events = await Api.UpcomingEvents();
-    const speech = [randomEvents(), eventsReducer(events)].join(" ");
+    const speech = [randomEvents(), listEvents(events)].join(" ");
 
     return input.responseBuilder
       .speak(speech)

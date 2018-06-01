@@ -1,5 +1,7 @@
 import { Response } from "ask-sdk-model";
 import { HandlerInput, ErrorHandler } from "ask-sdk-core";
+
+import { ErrorTypes } from "../lib/constants";
 import { randomRollingError } from "../lib/phrases";
 
 export const Rolling: ErrorHandler = {
@@ -10,6 +12,6 @@ export const Rolling: ErrorHandler = {
   },
 
   canHandle(input: HandlerInput, error: Error): boolean {
-    return error.name.startsWith("Rolling");
+    return error.name === ErrorTypes.Rolling;
   }
 };

@@ -14,3 +14,9 @@ export const MONTHS = {
   NOV: "November",
   DEC: "December"
 };
+
+export enum ErrorTypes {
+  Rolling = "RollingError",
+  Unknown = "UnknownError",
+  WrongRequestType = "WrongRequestType"
+}

@@ -1,5 +1,6 @@
 import { Response } from "ask-sdk-model";
 import { HandlerInput, RequestHandler } from "ask-sdk-core";
+
 import { HELP } from "../lib/phrases";
 
 export const Help: RequestHandler = {

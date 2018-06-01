@@ -1,9 +1,10 @@
-import GQL from "./queries";
-import { compose, createError, ErrorTypes } from "../lib/helpers";
-import { date } from "../lib/fx";
-import { API, TOP, MONTHS } from "../lib/constants";
 import { GraphQLClient } from "graphql-request";
 import * as translit from "translitit-cyrillic-russian-to-latin";
+
+import GQL from "./queries";
+import { date } from "../lib/fx";
+import { compose, createError } from "../lib/helpers";
+import { API, TOP, MONTHS, ErrorTypes } from "../lib/constants";
 
 const client = new GraphQLClient(API);
 

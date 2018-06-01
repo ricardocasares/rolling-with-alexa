@@ -1,9 +1,10 @@
 import { Response } from "ask-sdk-model";
 import { HandlerInput, RequestHandler } from "ask-sdk-core";
+
 import Api from "../api";
 import { TOP } from "../lib/constants";
-import { randomSpeakers, HELP } from "../lib/phrases";
-import { speakersReducer, extractSlots } from "../lib/helpers";
+import { getSlots } from "../lib/helpers";
+import { randomSpeakers, listSpeakers, HELP } from "../lib/phrases";
 
 export const TopSpeakers: RequestHandler = {
   async handle(input: HandlerInput): Promise<Response> {
