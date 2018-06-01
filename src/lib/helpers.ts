@@ -8,7 +8,7 @@ export function compose(...fns) {
   return fns.reduce((f, g) => (...args) => f(g(...args)));
 }
 
-export function sanitize(str) {
+export function sanitize(str: string): string {
   return translit(str.replace("&", "and"));
 }
 
