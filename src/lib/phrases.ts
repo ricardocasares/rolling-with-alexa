@@ -1,7 +1,8 @@
 import * as random from "unique-random-array";
 
+import { DRUMS } from "./sounds";
 import { sanitize } from "./helpers";
-import { audio, date, interject, DRUMS } from "./fx";
+import { audio, date, interject } from "./fx";
 
 export const WELCOME = [
   "Welcome to the Rolling Scopes!",
