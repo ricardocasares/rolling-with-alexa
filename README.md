@@ -2,7 +2,7 @@
 
 This repo is the source code for the talk `Voice User Interfaces with Alexa and Node.js` presented at the [Rolling Scopes #49 Kraków edition](https://krakow.rollingscopes.com/).
 
-![Rolling Scopes #49](https://raw.githubusercontent.com/ricardocasares/rolling-with-alexa/master/assets/logo_512x512.png)
+![Rolling Scopes #49](https://raw.githubusercontent.com/ricardocasares/rolling-with-alexa/master/assets/logo_108x108.png)
 
 Checkout [the slides](https://slides.com/ricardocasares/voice-user-interfaces-with-amazon-alexa)!
 
