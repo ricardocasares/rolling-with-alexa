@@ -59,11 +59,11 @@ export const ROLLING_ERRORS = [
 
 export const HELP = "You can ask me about upcoming events or top speakers.";
 
-export function listEvents(events) {
+export function eventsList(events) {
   return events.reduce(eventsReducer, "");
 }
 
-export function listSpeakers(speakers) {
+export function speakersList(speakers) {
   return speakers.reverse().reduce(speakersReducer(speakers), "");
 }
 

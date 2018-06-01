@@ -4,14 +4,14 @@ import { HandlerInput, RequestHandler } from "ask-sdk-core";
 import Api from "../api";
 import { TOP } from "../lib/constants";
 import { getSlots } from "../lib/helpers";
-import { randomSpeakers, listSpeakers, HELP } from "../lib/phrases";
+import { randomSpeakers, speakersList, HELP } from "../lib/phrases";
 
 export const TopSpeakers: RequestHandler = {
   async handle(input: HandlerInput): Promise<Response> {
     const n = getTop(input);
     const speakers = await Api.TopSpeakers(n);
-    const phrases = [randomSpeakers()(n), listSpeakers(speakers)];
-    const speech = phrases.join(" ");
+    const prefix = randomSpeakers();
+    const speech = [prefix(n), speakersList(speakers)].join(" ");
 
     return input.responseBuilder
       .speak(speech)
