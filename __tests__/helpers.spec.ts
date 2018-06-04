@@ -1,5 +1,4 @@
 import { ErrorTypes } from "../src/lib/constants";
-import { WithTop4 } from "../__fixtures__/TopSpeakersIntent";
 import { compose, sanitize, createError } from "../src/lib/helpers";
 
 test("compose", () => {

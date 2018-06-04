@@ -1,5 +1,4 @@
 import Api, { map, sort, filter, limit, extract } from "../src/api";
-import { GraphQLClient } from "graphql-request";
 
 test("UpcomingEvents", async () => {
   const events = await Api.UpcomingEvents();
