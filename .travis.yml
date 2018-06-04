@@ -6,14 +6,14 @@ env:
   - NODE_ENV=development
 
 before_install:
-  - npm i -g codecov
+  - yarn global add codecov
 
 install:
   - npm install
 
 script:
-  - npm test:coverage
-  - npm build
+  - yarn test:coverage
+  - yarn build
   - codecov
 
 notifications:
