@@ -12,7 +12,6 @@ install:
   - yarn
 
 script:
-  - yarn test:coverage
   - yarn build
   - codecov
 

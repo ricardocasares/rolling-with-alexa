@@ -11,7 +11,7 @@
     "tsc:watch": "tsc -w",
     "start": "micro",
     "micro:dev": "micro-dev",
-    "build": "tsc",
+    "build": "run-s test:coverage tsc",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
