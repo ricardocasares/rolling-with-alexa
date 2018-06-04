@@ -24,30 +24,36 @@ export async function UpcomingEvents() {
     });
 }
 
-function top(n: number) {
-  return compose(limit(n), sort, filter, map, extract);
+export function top(n: number) {
+  return compose(
+    limit(n),
+    sort,
+    filter,
+    map,
+    extract
+  );
 }
 
-function extract(data) {
+export function extract(data) {
   const { page = {} } = data;
   const { query = [] } = page;
 
   return query;
 }
 
-function map(data) {
+export function map(data) {
   return data.map(s => ({ ...s, talks: s.talks.length }));
 }
 
-function filter(data) {
+export function filter(data) {
   return data.filter(speaker => speaker.talks);
 }
 
-function sort(data) {
+export function sort(data) {
   return data.sort((a, b) => b.talks - a.talks);
 }
 
-function limit(n: number) {
+export function limit(n: number) {
   return data => data.slice(0, n);
 }
 
