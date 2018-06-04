@@ -3,11 +3,14 @@
     "lib": ["es2017"],
     "outDir": ".build",
     "skipLibCheck": true,
+    "module": "commonjs",
     "allowSyntheticDefaultImports": true,
     "importHelpers": true,
     "sourceMap": true,
     "noUnusedLocals": true,
     "noImplicitReturns": true,
     "noImplicitThis": true
-  }
+  },
+  "include": ["src"],
+  "exclude": ["**/__mocks__", "**/__tests__"]
 }
