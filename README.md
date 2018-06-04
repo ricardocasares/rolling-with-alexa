@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/ricardocasares/rolling-with-alexa.svg?branch=master)](https://travis-ci.org/ricardocasares/rolling-with-alexa)
+[![codecov](https://codecov.io/gh/ricardocasares/rolling-with-alexa/branch/master/graph/badge.svg)](https://codecov.io/gh/ricardocasares/rolling-with-alexa)
+
 # Rolling with Alexa
 
 This repo is the source code for the talk `Voice User Interfaces with Alexa and Node.js` presented at the [Rolling Scopes #49 Kraków edition](https://krakow.rollingscopes.com/).
