@@ -18,14 +18,3 @@ export function ssml(pattern) {
     }
   };
 }
-
-export function makeEvent({ intent, type }) {
-  return {
-    request: {
-      type: type || "IntentRequest",
-      intent: {
-        ...intent
-      }
-    }
-  };
-}

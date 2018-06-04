@@ -1,4 +1,4 @@
-import { skill, ssml, makeEvent } from "./helpers";
+import { skill, ssml } from "./helpers";
 import * as BuiltIn from "../__fixtures__/BuiltInIntents";
 
 describe("BuiltIn Intents", () => {
