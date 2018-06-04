@@ -1,18 +1,18 @@
 const speakers = [
   {
-    talks: 3,
-    name: "Ricardo"
-  },
-  {
-    talks: 19,
+    talks: 10,
     name: "Alexander"
   },
   {
-    talks: 9,
+    talks: 5,
+    name: "Ricardo"
+  },
+  {
+    talks: 4,
     name: "Denis"
   },
   {
-    talks: 7,
+    talks: 1,
     name: "Vadzim"
   }
 ];

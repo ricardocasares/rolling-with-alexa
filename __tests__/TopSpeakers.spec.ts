@@ -17,4 +17,10 @@ describe("TopSpeakers", () => {
     const response = await skill(Top.WithTop4);
     expect(response).toMatchObject(ssml(/top 4/gi));
   });
+
+  it("should tell in correct order", async () => {
+    const response = await skill(Top.WithTop2);
+    expect(response).toMatchObject(ssml(/Number 1: Alexander/gi));
+    expect(response).toMatchObject(ssml(/Number 2: Ricardo/gi));
+  });
 });
