@@ -32,7 +32,7 @@
       }
     },
     "testMatch": [
-      "**/src/**/*.spec.ts"
+      "**/*.spec.ts"
     ],
     "coverageDirectory": ".coverage"
   },

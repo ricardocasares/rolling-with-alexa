@@ -1,4 +1,4 @@
-import { handler } from "../skill";
+import { handler } from "../src/skill";
 
 export function skill(event) {
   return new Promise((resolve, reject) => {

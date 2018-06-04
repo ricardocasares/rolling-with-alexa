@@ -1,4 +1,4 @@
-jest.mock("../api");
+jest.mock("../src/api");
 import { skill, ssml } from "./helpers";
 import * as Top from "../__fixtures__/TopSpeakersIntent";
 
