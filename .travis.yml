@@ -9,7 +9,7 @@ before_install:
   - npm i -g codecov
 
 install:
-  - npm ci
+  - npm install
 
 script:
   - npm test:coverage
