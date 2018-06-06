@@ -1,0 +1,53 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "rolling scopes",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "UpcomingEvents",
+          "slots": [],
+          "samples": [
+            "tell me about upcoming events",
+            "upcoming events",
+            "next events",
+            "give me rolling scopes",
+            "when is the next rolling scopes event"
+          ]
+        },
+        {
+          "name": "TopSpeakers",
+          "slots": [
+            {
+              "name": "top",
+              "type": "AMAZON.NUMBER"
+            }
+          ],
+          "samples": [
+            "top {top}",
+            "top {top} speakers",
+            "tell me the top {top} speakers",
+            "who is on the top {top}",
+            "check the top {top} speakers"
+          ]
+        }
+      ],
+      "types": []
+    }
+  }
+}
