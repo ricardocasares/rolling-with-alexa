@@ -6,6 +6,7 @@ export const handler = Alexa.SkillBuilders.custom()
     Intents.Help,
     Intents.Stop,
     Intents.Launch,
+    Intents.Fallback,
     Intents.TopSpeakers,
     Intents.UpcomingEvents,
     Intents.SessionEnded
