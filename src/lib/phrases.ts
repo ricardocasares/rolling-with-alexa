@@ -59,6 +59,7 @@ export const ROLLING_ERRORS = [
 ];
 
 export const HELP = "You can ask me about upcoming events or top speakers.";
+export const FALLBACK = "Sorry, I didn't quite catch that, please, say again?";
 
 export function eventsList(events) {
   return events.reduce(eventsReducer, "");
