@@ -1,3 +1,6 @@
+import { ErrorTypes } from "../../lib/constants";
+import { createError } from "../../lib/helpers";
+
 const speakers = [
   {
     talks: 10,
@@ -19,6 +22,14 @@ const speakers = [
 
 export default {
   async TopSpeakers(n: number) {
+    if (n > 5) {
+      throw createError("Explode!", ErrorTypes.RollingApi);
+    }
+
+    if (n === 0) {
+      throw createError("Explode!", ErrorTypes.Unknown);
+    }
+
     return speakers.slice(0, n);
   },
 

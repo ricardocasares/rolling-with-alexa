@@ -16,4 +16,9 @@ describe("BuiltIn Intents", () => {
     const response = await skill(BuiltIn.Cancel);
     expect(response).toMatchObject(ssml(/see you/gi));
   });
+
+  it("should work with Fallback intent", async () => {
+    const response = await skill(BuiltIn.Fallback);
+    expect(response).toMatchObject(ssml(/say again/gi));
+  });
 });

@@ -39,3 +39,31 @@ export const WithTop4 = {
     }
   }
 };
+
+export const WithTopZero = {
+  request: {
+    type: "IntentRequest",
+    intent: {
+      name: "TopSpeakers",
+      slots: {
+        top: {
+          value: "0"
+        }
+      }
+    }
+  }
+};
+
+export const WithTop6 = {
+  request: {
+    type: "IntentRequest",
+    intent: {
+      name: "TopSpeakers",
+      slots: {
+        top: {
+          value: "6"
+        }
+      }
+    }
+  }
+};

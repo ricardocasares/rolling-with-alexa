@@ -24,3 +24,12 @@ export const Cancel = {
     }
   }
 };
+
+export const Fallback = {
+  request: {
+    type: "IntentRequest",
+    intent: {
+      name: "AMAZON.FallbackIntent"
+    }
+  }
+};
