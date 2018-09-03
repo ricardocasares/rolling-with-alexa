@@ -190,9 +190,9 @@ ask-sdk-core@^2.0.7:
   version "2.0.7"
   resolved "https://registry.yarnpkg.com/ask-sdk-core/-/ask-sdk-core-2.0.7.tgz#0f2300aa99a5bd92c0bd700d1ed92ff8da1f83b9"
 
-ask-sdk-model@^1.3.0:
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/ask-sdk-model/-/ask-sdk-model-1.3.0.tgz#eba25611f464e2713a83df6d7323d2b9dea564e2"
+ask-sdk-model@^1.5.0:
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/ask-sdk-model/-/ask-sdk-model-1.5.0.tgz#7b2b9b5b9a22affec96b1867652c7ae286aff9a3"
 
 asn1@~0.2.3:
   version "0.2.3"
