@@ -38,7 +38,7 @@
     "coverageDirectory": ".coverage"
   },
   "dependencies": {
-    "ask-sdk-core": "^2.0.9",
+    "ask-sdk-core": "^2.0.10",
     "ask-sdk-model": "^1.6.0",
     "graphql-request": "^1.8.2",
     "micro": "^9.3.3",
