@@ -28,8 +28,7 @@
     },
     "globals": {
       "ts-jest": {
-        "skipBabel": true,
-        "tsConfigFile": "./tsconfig.json"
+        "tsConfig": "./tsconfig.json"
       }
     },
     "testMatch": [
