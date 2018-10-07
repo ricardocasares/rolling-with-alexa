@@ -38,7 +38,7 @@
   },
   "dependencies": {
     "ask-sdk-core": "^2.0.10",
-    "ask-sdk-model": "^1.6.0",
+    "ask-sdk-model": "^1.7.1",
     "graphql-request": "^1.8.2",
     "micro": "^9.3.3",
     "translitit-cyrillic-russian-to-latin": "^0.1.1",

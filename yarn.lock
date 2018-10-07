@@ -220,10 +220,10 @@ ask-sdk-core@^2.0.10:
   resolved "https://registry.yarnpkg.com/ask-sdk-core/-/ask-sdk-core-2.0.10.tgz#8fd07c39ea267bebafd2dfb5f47202ebef8d71d3"
   integrity sha512-F3Sy7POfWV5sj1blRIwg9NCXePeN3jpYrlTEPOG69GqoJrn9foF4NwTmjA5DgyzYaXO62QKNY2mUAO5SkFWZWA==
 
-ask-sdk-model@^1.6.0:
-  version "1.6.0"
-  resolved "https://registry.yarnpkg.com/ask-sdk-model/-/ask-sdk-model-1.6.0.tgz#1122729a35017f348ad62cc1b008b1e72ca2784e"
-  integrity sha512-M6y3+A+G0yRIlMB+3lQKXhly4abyphzSmVzWyMPgSk8/VoTFpzi5EdzfYFrewMzVPfNnwGP0pUimfMxZkazqCg==
+ask-sdk-model@^1.7.1:
+  version "1.7.1"
+  resolved "https://registry.yarnpkg.com/ask-sdk-model/-/ask-sdk-model-1.7.1.tgz#537a794cbb434f9208b7fbd28112ffda2adb3a41"
+  integrity sha512-aOaQnAFCJEmy/Px87xajvAElHi4x12Ib5cHvrnFKiY1pZ/HnT/ASsZunTK8kI8RapMcNiYAEMeW/zvlEDSc2fA==
 
 asn1@~0.2.3:
   version "0.2.3"
