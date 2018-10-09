@@ -46,7 +46,7 @@
     "unique-random-array": "^1.0.1"
   },
   "devDependencies": {
-    "@types/jest": "^23.3.3",
+    "@types/jest": "^23.3.4",
     "@types/micro": "^7.3.2",
     "@types/node": "^10.11.4",
     "jest": "^23.6.0",
