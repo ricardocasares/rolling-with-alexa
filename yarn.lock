@@ -28,10 +28,10 @@
   resolved "https://registry.yarnpkg.com/@types/micro/-/micro-7.3.2.tgz#4fc3f91e0b0a18ea7201197c31acca55d4a691d0"
   integrity sha512-PzYVidkNdHIkQWTfv6DEuzd+nzCk7LT8thzqr91nK5AzhXbR1QjKiCMbvyAvR1SOdv8pJKVX/fwfPxULSc3JVg==
 
-"@types/node@^10.11.5":
-  version "10.11.5"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-10.11.5.tgz#6489ebda4452592d3fd37aefa57eedc01ed13378"
-  integrity sha512-3j1EFLfrjYRHRFjBb+RIXXwr1YGzcfpQVMP39thZa6tMY+JjVgQddPF+hsdV800JqbuLwpwAWclDpbGSAw44vQ==
+"@types/node@^10.11.7":
+  version "10.11.7"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-10.11.7.tgz#0e75ca9357d646ca754016ca1d68a127ad7e7300"
+  integrity sha512-yOxFfkN9xUFLyvWaeYj90mlqTJ41CsQzWKS3gXdOMOyPVacUsymejKxJ4/pMW7exouubuEeZLJawGgcNGYlTeg==
 
 abab@^1.0.4:
   version "1.0.4"
