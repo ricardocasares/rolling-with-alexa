@@ -48,7 +48,7 @@
   "devDependencies": {
     "@types/jest": "^23.3.9",
     "@types/micro": "^7.3.3",
-    "@types/node": "^10.12.6",
+    "@types/node": "^10.12.8",
     "jest": "^23.6.0",
     "micro-dev": "^3.0.0",
     "npm-run-all": "^4.1.3",
