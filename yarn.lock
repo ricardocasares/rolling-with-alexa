@@ -516,10 +516,10 @@ arrify@^1.0.1:
   resolved "https://registry.yarnpkg.com/arrify/-/arrify-1.0.1.tgz#898508da2226f380df904728456849c1501a4b0d"
   integrity sha1-iYUI2iIm84DfkEcoRWhJwVAaSw0=
 
-ask-sdk-core@^2.5.1:
-  version "2.5.1"
-  resolved "https://registry.yarnpkg.com/ask-sdk-core/-/ask-sdk-core-2.5.1.tgz#ee0287653d13ea55995e94e5399de0e5e7711a41"
-  integrity sha512-VF2H98sF0VJ21y40dI78ozNGxP0ixwUQzslU5rcW2hRlv1QDqALIeFChpkE3MCxc3zxg9IbwdDkR3HT3mwkrLg==
+ask-sdk-core@^2.5.2:
+  version "2.5.2"
+  resolved "https://registry.yarnpkg.com/ask-sdk-core/-/ask-sdk-core-2.5.2.tgz#554b349742c52c8cd6e4bbb0faf73f50b0bc67d6"
+  integrity sha512-nMIAs+jsAJEpsvOAP6C8tSuZC+kr17NbGRbk78P1PWovSdlhkhH3EJVeFkkVfxWEIX6mOOf94mC/q8FcCyzyfA==
   dependencies:
     ask-sdk-runtime "^2.4.0"
 
