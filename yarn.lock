@@ -531,10 +531,10 @@ ask-sdk-core@^2.5.2:
   dependencies:
     ask-sdk-runtime "^2.4.0"
 
-ask-sdk-model@^1.15.1:
-  version "1.15.1"
-  resolved "https://registry.yarnpkg.com/ask-sdk-model/-/ask-sdk-model-1.15.1.tgz#387cab67c9f54befae6a3fa16afeb7abf0cd07fe"
-  integrity sha512-WgTrGc2MB1f/wdOkt6M2mVVRQ0D8r42fjUyva63eVqT4+vV100zgvCM7gKhrCLWu7Fj320MnXyCYk/Tqrmrg0w==
+ask-sdk-model@^1.16.0:
+  version "1.16.0"
+  resolved "https://registry.yarnpkg.com/ask-sdk-model/-/ask-sdk-model-1.16.0.tgz#05ebbbdd26d72769e4a29c4a62bdc98597d2746a"
+  integrity sha512-GPIfiQVXUAqUVv0x+Z2h3a3XW4Et9bNhdQ2cNkfeHPDd3eJ8K8JMBNGcJk32rEQnef2uEf03lcjz2sCvHBlf+A==
 
 ask-sdk-runtime@^2.4.0:
   version "2.4.0"
