@@ -43,7 +43,7 @@
     "micro": "^9.3.4",
     "translitit-cyrillic-russian-to-latin": "^0.1.1",
     "tslib": "^1.11.1",
-    "unique-random-array": "^1.0.1"
+    "unique-random-array": "^2.0.0"
   },
   "devDependencies": {
     "@types/jest": "^24.0.25",
