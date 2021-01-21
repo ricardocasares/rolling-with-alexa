@@ -42,7 +42,7 @@
     "graphql-request": "^2.0.0",
     "micro": "^9.3.4",
     "translitit-cyrillic-russian-to-latin": "^0.1.1",
-    "tslib": "^1.11.1",
+    "tslib": "^2.0.3",
     "unique-random-array": "^1.0.1"
   },
   "devDependencies": {
