@@ -4201,17 +4201,17 @@ union-value@^1.0.0:
     is-extendable "^0.1.1"
     set-value "^0.4.3"
 
-unique-random-array@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/unique-random-array/-/unique-random-array-1.0.1.tgz#f29bda2a62be8860a703c4739c8f4fdb4d722cc7"
-  integrity sha512-z9J/SV8CUIhIRROcHe9YUoAT6XthUJt0oUyLGgobiXJprDP9O9dsErNevvSaAv5BkhwFEVPn6nIEOKeNE6Ck1Q==
+unique-random-array@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/unique-random-array/-/unique-random-array-3.0.0.tgz#db0c11c885d674c39050a79cf25d11b09ff97c22"
+  integrity sha512-AETNmMf8dV7VfCu4pM5SO1nKkZZp3lZsbHk9VxkvR2ZjMYy4mzWwzez0g+ZtYIr+RaVH+UN8A003E7woM/ud7Q==
   dependencies:
-    unique-random "^1.0.0"
+    unique-random "^3.0.0"
 
-unique-random@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/unique-random/-/unique-random-1.0.0.tgz#ce3e224c8242cd33a0e77b0d7180d77e6b62d0c4"
-  integrity sha1-zj4iTIJCzTOg53sNcYDXfmti0MQ=
+unique-random@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/unique-random/-/unique-random-3.0.0.tgz#ddf20e62d2f5af1dbd606602fb5b5821588c8469"
+  integrity sha512-4vjtE3pH6xO5OmsSmjc6KPgHy2rbCw66BbMRLIyXkuq+WzOKA1oNkqQ+Y7Lh+sE0DrOrWMSpFkivhhzCF7J6HA==
 
 unpipe@1.0.0:
   version "1.0.0"
