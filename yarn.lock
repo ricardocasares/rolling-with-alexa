@@ -394,10 +394,10 @@
     jest-diff "^26.0.0"
     pretty-format "^26.0.0"
 
-"@types/micro@^7.3.3":
-  version "7.3.3"
-  resolved "https://registry.yarnpkg.com/@types/micro/-/micro-7.3.3.tgz#31ead8df18ac10d58b7be1186d4b2d977b13a938"
-  integrity sha512-I3n3QYT7lqAxkyAoTZyg1yrvo38BxW/7ZafLAXZF/zZQOnAnQzg6j9XOuSmUEL5GGVFKWw4iqM+ZLnqb2154TA==
+"@types/micro@^7.3.4":
+  version "7.3.4"
+  resolved "https://registry.yarnpkg.com/@types/micro/-/micro-7.3.4.tgz#60d231eb87d77f4eba7bf7770a7b8b7b99d23000"
+  integrity sha512-vZbFUSUFQtMLnmmTzLiUQKGRWb/3AjDXhcDV+4yrhdLZBPdC7C2pvasQKVd8chLuWP2D7fS2BrwfyJAfkWcQ4g==
   dependencies:
     "@types/node" "*"
 
