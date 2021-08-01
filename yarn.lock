@@ -589,22 +589,22 @@ arrify@^1.0.1:
   resolved "https://registry.yarnpkg.com/arrify/-/arrify-1.0.1.tgz#898508da2226f380df904728456849c1501a4b0d"
   integrity sha1-iYUI2iIm84DfkEcoRWhJwVAaSw0=
 
-ask-sdk-core@^2.10.1:
-  version "2.10.1"
-  resolved "https://registry.yarnpkg.com/ask-sdk-core/-/ask-sdk-core-2.10.1.tgz#da9dc1b1e3b23c4e9cb94a088749e70e2ad82698"
-  integrity sha512-C6NaCccoJQaMJYoRlFvS4Yzk3pPTjZF3qAOEyYPZVqOkscZSz0PW25jPhLDwRYp2ynnQbqK9cd6N1APH0Xru7w==
+ask-sdk-core@^2.11.0:
+  version "2.11.0"
+  resolved "https://registry.yarnpkg.com/ask-sdk-core/-/ask-sdk-core-2.11.0.tgz#9b343dfc52d44998c186b1ba7c1598c6f0191b5f"
+  integrity sha512-NBhVNiLuDLRb34vMCuJIe30lK5lb0+y7UkGti9BVZPvkiKkXTxYAjG/tZyGGYqeu3ZAltwvMTUjZB+aTkRyk2g==
   dependencies:
-    ask-sdk-runtime "^2.10.1"
+    ask-sdk-runtime "^2.10.2"
 
 ask-sdk-model@^1.35.1:
   version "1.35.1"
   resolved "https://registry.yarnpkg.com/ask-sdk-model/-/ask-sdk-model-1.35.1.tgz#310a98a01e5ff352395f46ba3b7ecf7eecddae55"
   integrity sha512-xYWkjGVOetvApO5qoCkxxEbRdzld/toSE32xYW48jIDYmOsL0bCGXkf4oheZ3jEhg6jrSdBtHYN0Xe9cyVXIOg==
 
-ask-sdk-runtime@^2.10.1:
-  version "2.10.1"
-  resolved "https://registry.yarnpkg.com/ask-sdk-runtime/-/ask-sdk-runtime-2.10.1.tgz#72b8a157c9f5052f43f7f592772cbb1bebd4ce6f"
-  integrity sha512-BFEs0UFGvjpKmbYSVhcFa1Oh+eyfCkWULanV+mWTxHTJ7aeB+UsZ8TvkDWZOnHsn0shAFtvkmun4tjx8eOR7uA==
+ask-sdk-runtime@^2.10.2:
+  version "2.10.2"
+  resolved "https://registry.yarnpkg.com/ask-sdk-runtime/-/ask-sdk-runtime-2.10.2.tgz#8c3bd818c73deb46bccc58ff00387ee652b5a0ad"
+  integrity sha512-pe9xbhQzkRGrrWT/pRceoREmVLKw33C7Z00mC4mKZEOrO4vjjrUAXNIALPKIy/gpqMTB00N0H77vLtzZVH21Sg==
 
 asn1@~0.2.3:
   version "0.2.3"
